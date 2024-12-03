@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test LightBox</title>
+    <link rel="stylesheet" href="/src/css/components/lightbox.css" />
+    <script type="module" src="/src/js/script.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test LightBox</title>
-  <link rel="stylesheet" href="/src/css/components/lightbox.css">
-  <script type="module" src="/src/js/script.js"></script>
-</head>
-
-<body>
-  <h1>Test LightBox avec élément <code>dialog</code></h1>
-  <ul>
-    <li><img src="/assets/img/thumbnails/animals-1.jpeg" alt="un animal" data-full-img="/assets/img/animals-1.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-2.jpeg" alt="un animal" data-full-img="/assets/img/animals-2.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-3.jpeg" alt="un animal" data-full-img="/assets/img/animals-3.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-4.jpeg" alt="un animal" data-full-img="/assets/img/animals-4.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-5.jpeg" alt="un animal" data-full-img="/assets/img/animals-5.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-6.jpeg" alt="un animal" data-full-img="/assets/img/animals-6.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-7.jpeg" alt="un animal" data-full-img="/assets/img/animals-7.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-8.jpeg" alt="un animal" data-full-img="/assets/img/animals-8.jpeg" />
-    </li>
-    <li><img src="/assets/img/thumbnails/animals-9.jpeg" alt="un animal" data-full-img="/assets/img/animals-9.jpeg" />
-    </li>
-  </ul>
-  <dialog id="lightbox"><img src="/assets/img/animals-1.jpeg" alt="" /></dialog>
-</body>
-
+  <body>
+    <h1>Test LightBox avec élément <code>dialog</code></h1>
+    <ul>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-1.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-1.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-2.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-2.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-3.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-3.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-4.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-4.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-5.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-5.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-6.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-6.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-7.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-7.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-8.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-8.jpeg"
+        />
+      </li>
+      <li>
+        <img
+          src="/assets/img/thumbnails/animals-9.jpeg"
+          alt="un animal"
+          data-full-img="/assets/img/animals-9.jpeg"
+        />
+      </li>
+    </ul>
+    <dialog id="lightbox">
+      <img src="/assets/img/animals-4.jpeg" alt="" />
+    </dialog>
+  </body>
 </html>

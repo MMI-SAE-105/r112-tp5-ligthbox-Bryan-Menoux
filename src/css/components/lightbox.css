@@ -1,3 +1,19 @@
 /**
 * Lightbox
 */
+
+#lightbox {
+  padding: 50px;
+  border-radius: 20px;
+  border: 5px solid darkblue;
+}
+
+#lightbox::backdrop {
+  background-color: darkorange;
+  opacity: 0.4;
+}
+
+#lightbox img {
+  width: 60vw;
+  height: auto;
+}
