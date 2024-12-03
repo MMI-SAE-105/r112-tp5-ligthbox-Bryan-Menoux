@@ -2,15 +2,26 @@
 * Lightbox
 */
 
-#lightbox {
+@keyframes openLightbox {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+#lightbox[open] {
   padding: 50px;
+  animation: openLightbox 0.5s;
   border-radius: 20px;
   border: 5px solid darkblue;
 }
 
-#lightbox::backdrop {
+#lightbox[open]::backdrop {
   background-color: darkorange;
-  opacity: 0.4;
+  opacity: 0.3;
+  transition: ease 3s;
 }
 
 #lightbox img {
