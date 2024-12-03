@@ -2,11 +2,10 @@
 
 const lightBox = document.querySelector("#lightbox");
 
-lightBox.showModal();
-
-lightBox.close();
-
-document.body.addEventListener("click", function (evt) {
-  lightBox.showModal();
-  console.log("click");
+document.addEventListener("click", function (e) {
+  if (lightBox.open) {
+    lightBox.close();
+  } else {
+    lightBox.showModal();
+  }
 });
